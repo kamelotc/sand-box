@@ -1,0 +1,9 @@
+name: Hello
+on: [push, workflow_dispatch]
+jobs:
+  hello:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: action/checkout@v7
+      - run: echo "Bonjour depuis $RUNNER_OS"
+      - run: ls -la
