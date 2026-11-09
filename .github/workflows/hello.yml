@@ -7,3 +7,4 @@ jobs:
       - uses: actions/checkout@v7
       - run: echo "Bonjour depuis $RUNNER_OS"
       - run: ls -la
+      - run: exit-1
